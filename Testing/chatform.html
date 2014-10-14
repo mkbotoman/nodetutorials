@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>ChatNode</title>
+	</head>
+	<body>
+
+		<div id="login">
+			<form name="loginForm" action="">
+				<fieldset>
+					<legend>Login</legend>
+					Name<br/>
+					<input id="name" name="name" type="text" />
+					<button id="loginButton">Login</button>			
+				</fieldset>
+			</form>
+		</div>
+
+		<div id="chat" style="display:none">
+			<form name="chatform" action="/publish">
+				<fieldset>
+					<legend>ChatNode</legend>
+					<p>
+						<span id="displayName" style="font-weight:bold;font-size:24" />
+					</p>
+					<p>
+						Message<br/>
+						<input id="message" type="text" size="100">
+						<button id="sendButton">Send</button>
+					</p>
+					<p>
+						<div id="chatDisplay"></div>
+					</p>
+				</fieldset>
+			</form>			
+		</div>
+
+	</body>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
+</html>

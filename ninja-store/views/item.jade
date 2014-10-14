@@ -1,0 +1,14 @@
+
+extends layout
+
+block content
+	#wrapper
+		#logo
+			img(src='/images/ninja.jpeg')
+		#display
+			include userbar
+
+			p The #{name.toLowerCase()} is a Ninja must-have
+			p Buy one now!
+
+		include footer
